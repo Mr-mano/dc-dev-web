@@ -44,7 +44,7 @@ _Pour identifier la resistance, regardez les couleurs dessus, la 330 Ohm a les c
 $ pip install RPi.GPIO
 ```
  
-. Dans ce même dossier, créez un fichier `led.js` : 
+. Dans ce même dossier, créez un fichier `led.py` : 
 
 ```python
 #import des utilistaires python
