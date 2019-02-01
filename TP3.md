@@ -1,4 +1,4 @@
-TP4
+TP3
 ===
 _infos pratiques_ : tous les raspberry ont pour login `pi` et pour mot de passe `raspberry`
 
@@ -18,9 +18,9 @@ _Lorsque le capteur détecte un mouvement, il envoie un signal sur son fil jaune
 import RPi.GPIO as GPIO
 import time
 
-//Initialisation de notre GPIO 17 pour recevoir un signal
-//Contrairement à nos LEDs avec lesquelles on envoyait un signal
-broche = 17
+# Initialisation de notre GPIO 17 pour recevoir un signal
+# Contrairement à nos LEDs avec lesquelles on envoyait un signal
+broche=17
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(broche, GPIO.IN)
@@ -31,7 +31,8 @@ previousstate = 0
 # Boucle infini jusqu'à CTRL-C
 while True:
     # Lecture du capteur
-    currentstate = GPIO.input(broche)		 # Si le capteur est déclenché
+    currentstate = GPIO.input(broche)
+		 # Si le capteur est déclenché
     if currentstate == 1 and previousstate == 0:
         print("    Mouvement détecté !")
         # En enregistrer l'état
