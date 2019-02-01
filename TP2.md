@@ -33,7 +33,7 @@ _La température remontée par votre capteur est le nombre en bas à droite, div
 . créez un fichier `temperature.py` :
 
 ```python
-/# Importsimport os
+# Importsimport os
 import glob
 import time
 
